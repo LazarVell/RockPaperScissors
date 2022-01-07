@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors the game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header>
+      <h1>Rock, Paper, Scissors!</h1>
+      <p><strong>Austin Powers</strong> and <strong>Dr. Evil</strong> are at it again!
+       This time, they are settling the score with one of the oldest games
+      they remember - The Rock, Paper, Scissors! It is up to you to help our
+      hero emerge victorious!</p>
+      <p>You will play a 5 round deathmatch. After 5 rounds a winner will be
+        determined, however it is possible to end with a draw, as this is a
+        clash of titans after all. Can you help Austin tip the scales in his favor?
+      </p>
+      <h2>FIGHT!</h2>
+    </header>
+    <main>
+      <div id="game" class="game_container">
+        <div id="resultContainer" class="game_result_container"> </div>
+        <div class="game_player_container">
+          <div class="game_player_card">
+            <div class="game_card_name">You - Austin Powers</div>
+          </div>
+          <div class="game_score_container">
+            <div class="game_player_score">
+              <span id="playerScoreboard">0</span> versus
+              <span id="computerScoreboard">0</span>
+            </div>
+          </div>
+          <div class="game_player_card">
+            <div class="game_card_name">Computer - Dr. Evil</div>
+          </div>
+        </div>
+        <div class="choice_banner">Choose your weapons!</div>
+        <div class="game_choice_container">
+          <div class="game_choice_item">
+            <div data-value="rock" class="rock_button"></div>
+            Rock
+          </div>
+          <div class="game_choice_item">
+            <div data-value="paper" class="paper_button"></div>
+            Paper
+          </div>
+          <div class="game_choice_item">
+            <div data-value="scissors" class="scissors_button"></div>
+            Scissors
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Project made by LazarVell. Check out my
+      <a href="https://github.com/LazarVell" target="_blank"
+        >github</a
+      >
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
