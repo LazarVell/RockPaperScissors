@@ -65,7 +65,7 @@
   }
   .game_result_container div {
     font-size: 1.25rem;
-    text-align: Right;
+
   }
   .game_result_container p {
     font-size: 2rem;
@@ -138,4 +138,41 @@
   .scissors_button {
     background: url(images/scissors.jpg) center center
       no-repeat;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .game_player_container{
+        display: block;
+        max-width: 100vh;
+        align-items: center;
+    }
+
+    .game_choice_container, .choice_banner {
+      max-width: 100vh;
+    }
+
+    .game_container {
+      min-width: 350px;
+      max-width: 100vh;
+    }
+    .game_player_card {
+      margin:auto;
+    }
+
+    .game_player_score {
+      font-size: 56px;
+    }
+
+    .game_result_container {
+      max-width: 100vh;
+    }
+    .style {
+      text-align: center;
+    }
+
+    .game_result_container p {
+      font-size: 15px;
+      width: 350px;
+      overflow: auto;
+    }
   }

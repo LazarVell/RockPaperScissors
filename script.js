@@ -72,6 +72,7 @@ const game = (rounds) => {
 
   displayRound = (round) => {
     div.innerHTML = round;
+    div.classList.add("style");
     resultContainer.appendChild(div);
   };
 
